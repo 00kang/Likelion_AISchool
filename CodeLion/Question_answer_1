@@ -1,0 +1,18 @@
+total_dictionary = {}
+
+#질문 입력
+while True:
+  question = input("질문을 입력해 주세요 : ")
+  if (question == "q"):
+    break
+  else:
+    total_dictionary[question] = " "
+
+#답변 입력
+for i in total_dictionary:
+  print(i)
+  answer = input("답변을 입력해 주세요 : ")
+  total_dictionary[i] = answer
+
+#최종 결과물 
+print(total_dictionary)
